@@ -31,6 +31,10 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 <br/>
 
+The source folder is the root of the project. Inside that folder, we have: properties - json file with error status codes and messages; models - containing the user object schema for mongoose; services - containing validation functions; routes - containing the http routes for CRUD (Post, Get, Put and Delete).
+
+<br/>
+
 ## Future Improvements
 
 - Separate the routes from the controllers.
