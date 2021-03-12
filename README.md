@@ -37,6 +37,7 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 <br/>
 
 <strong>Routes</strong> - Database CRUD:
+Main route: "/api/users"
 - POST("/"): create user.
 - GET("/"): list all users.
 - GET("/name","/cpf","/email"): search a user with a given parameter.
