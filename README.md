@@ -16,6 +16,11 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 ## Entity Diagram
 
+<p align="center">
+  <img src="./entity-diagram.png" width="150px" align="center"></img>
+</p>
+
+
 <br/>
 
 ## Files Organization
