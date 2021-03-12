@@ -9,3 +9,13 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 <strong>API URL</strong>: https://users-simple-crud.herokuapp.com/
 
 <br/>
+
+## Entity Diagram
+
+<br/>
+
+## Files Organization
+
+<br/>
+
+## Procedure Mapping
