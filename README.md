@@ -4,4 +4,4 @@
 
 <br/>
 
-<strong>Base URL</strong>: https://users-simple-crud.herokuapp.com/
+<strong>API URL</strong>: https://users-simple-crud.herokuapp.com/
