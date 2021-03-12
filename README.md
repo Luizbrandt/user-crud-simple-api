@@ -1,6 +1,6 @@
 # 💻 User's Crud (API)
 
-<img src="users-crud-logo-min.png"></img
+<img src="users-crud-logo-min.png"></img>
 
 ## <strong>Description</strong>
 
