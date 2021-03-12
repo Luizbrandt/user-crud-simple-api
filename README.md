@@ -38,7 +38,12 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 ## Installation
 
+Clone this git repo:
 ```javascript
 git clone https://github.com/Luizbrandt/user-crud-simple-api
-npm i
+```
+
+Install node modules and packages (nmp):
+```javascript
+npm install
 ```
