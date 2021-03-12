@@ -20,6 +20,10 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 ## Files Organization
 
+<p align="center">
+  <img src="./files-diagram.png" align="center"></img>
+</p>
+
 <br/>
 
 ## Procedure Mapping Diagram
