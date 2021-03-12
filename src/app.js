@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
-const routeUsers = require('./routes/users');
+const routeUsers = require('./routes/userRoutes');
 
 app.use("/api/users", routeUsers);
 

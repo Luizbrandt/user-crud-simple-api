@@ -1,0 +1,29 @@
+{
+    "STATUS_CODE": {
+        "CONFLICT": 409,
+        "EMPTY_FIELDS": 400,
+        "NOT_FOUND": 404,
+        "FAILED": 408
+    },
+
+    "MESSAGES": {
+        "CPF_USED": "CPF already used!",
+        "EMAIL_USED": "Email already used!",
+
+        "EMPTY_FIELD": "Name, CPF and Email should not be empty!",
+        "EMPTY_NAME": "Name should not me empty!",
+        "EMPTY_CPF": "CPF should not me empty!",
+        "EMPTY_EMAIL": "Email should not me empty!",
+        "EMPTY": "Request should not be empty (must give at least Name, Email or CPF)!",
+
+        "CREATE_FAILED": "Create user failed!",
+        
+        "CPF_NOT_FOUND": "No user found with given CPF!",
+        "EMAIL_NOT_FOUND": "No user found with given Email!",
+        "NAME_NOT_FOUND": "No user found with given Name!",
+
+        "CREATED_SUCCESS": "User created successfully!",
+        "CREATED_FAILED": "User creation failed!"
+    }
+
+}
