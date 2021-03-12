@@ -17,7 +17,7 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 ## Entity Diagram
 
 <p align="center">
-  <img src="./entity-diagram.png" align="center"></img>
+  <img src="./entity-diagram-p.png" align="center"></img>
 </p>
 
 
@@ -28,10 +28,6 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 <p align="center">
   <img src="./files-diagram.png" align="center"></img>
 </p>
-
-<br/>
-
-## Procedure Mapping Diagram
 
 <br/>
 
