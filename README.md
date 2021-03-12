@@ -23,6 +23,29 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 <br/>
 
+## Procedure Mapping
+
+<strong>Services</strong> - User Data Validation:
+- userDataCheck(): verifies if the request body has some empty field (name, cpf, email).
+- getUserByID(): return the first user with a given ID.
+- getUsers(): return all registered users.
+- getUserByName(), ByCpf() and ByEmail(): return the first user with a giver parameter.
+- updateUserEmail(): updates the email of a user, with it's given ID.
+- createUser(): register a user with the given parameters.
+- emptyName(), CPF() and Email(): check if the given parameter is a empty value.
+
+<br/>
+
+<strong>Routes</strong> - Database CRUD:
+- POST("/"): create user.
+- GET("/"): list all users.
+- GET("/name","/cpf","/email"): search a user with a given parameter.
+- PUT("/email"): change the email of the user with a given ID, since name and CPF values do not change over time.
+- DELETE("/"): delete the user with a given ID.
+
+<br/>
+
+
 ## Files Organization
 
 <p align="center">
