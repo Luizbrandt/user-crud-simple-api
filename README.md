@@ -47,7 +47,7 @@ Clone this git repo:
 git clone https://github.com/Luizbrandt/user-crud-simple-api
 ```
 
-Install node modules and packages (nmp):
+Install node modules and packages (npm):
 ```javascript
 npm install
 ```
