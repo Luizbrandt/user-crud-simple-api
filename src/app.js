@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
+mongoose.set('useFindAndModify', false);
 
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());

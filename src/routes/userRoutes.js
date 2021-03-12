@@ -114,4 +114,49 @@ router.get("/email", async (request, response) => {
 
 });
 
+//Update Email (Name and CPF don't change over time)
+router.put("/email", async (request, response) => {
+
+    const oldEmailEmpty = userService.emptyEmail(request.body.oldEmail);
+    const newEmailEmpty = userService.emptyEmail(request.body.newEmail);
+
+    if(oldEmailEmpty){
+        response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.EMPTY_EMAIL});
+    }else if(newEmailEmpty){
+        response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.NEW_EMAIL_EMPTY});
+    }else if(request.body.oldEmail == request.body.newEmail){
+        response.status(data.STATUS_CODE.CONFLICT).json({message: data.MESSAGES.EMAIL_EQUAL});
+    }else{
+        const userFound = await userService.getUserByEmail(request.body.oldEmail);
+        if(userFound){
+            const userUpdated = await userService.updateUserEmail(request.body.oldEmail, request.body.newEmail);
+            if(userUpdated){
+                const userWithNewValues = await userService.getUserByEmail(request.body.newEmail);
+                response.json({ message: data.MESSAGES.UPDATE_SUCCESS, user: userWithNewValues });
+            } else {
+                response.status(data.STATUS_CODE.FAILED).json({ message: data.MESSAGES.UPDATE_FAILED });
+            }
+        }else{
+            response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.EMAIL_NOT_FOUND});
+        }
+    }
+
+});
+
+//Delete User
+router.delete("/", async (request, response) => {
+
+    if(!request.body.id || (request.body.id.length != 24)){
+        response.status(data.STATUS_CODE.EMPTY_FIELDS).json({message: data.MESSAGES.EMPTY_ID});
+    } else {
+        const deleteUser = await userService.getUserByID(request.body.id);
+        if(!deleteUser){
+            response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.ID_NOT_FOUND});
+        }else{
+            await deleteUser.delete();
+            response.json({message: data.MESSAGES.DELETED_SUCCESS});
+        }
+    }
+})
+
 module.exports = router;

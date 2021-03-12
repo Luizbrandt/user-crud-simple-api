@@ -9,21 +9,24 @@
     "MESSAGES": {
         "CPF_USED": "CPF already used!",
         "EMAIL_USED": "Email already used!",
-
         "EMPTY_FIELD": "Name, CPF and Email should not be empty!",
         "EMPTY_NAME": "Name should not me empty!",
         "EMPTY_CPF": "CPF should not me empty!",
         "EMPTY_EMAIL": "Email should not me empty!",
         "EMPTY": "Request should not be empty (must give at least Name, Email or CPF)!",
-
         "CREATE_FAILED": "Create user failed!",
-        
         "CPF_NOT_FOUND": "No user found with given CPF!",
         "EMAIL_NOT_FOUND": "No user found with given Email!",
         "NAME_NOT_FOUND": "No user found with given Name!",
-
         "CREATED_SUCCESS": "User created successfully!",
-        "CREATED_FAILED": "User creation failed!"
+        "CREATED_FAILED": "User creation failed!",
+        "UPDATE_FAILED": "Failed to update user!",
+        "UPDATE_SUCCESS": "User updated successfully!",
+        "NEW_EMAIL_EMPTY": "New email should not me empty!",
+        "EMAIL_EQUAL": "New email should be different from old email!",
+        "EMPTY_ID": "ID should not be empty!",
+        "ID_NOT_FOUND": "User with given ID not found!",
+        "DELETED_SUCCESS": "User deleter successfully!"
     }
 
 }

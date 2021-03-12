@@ -10,6 +10,10 @@ class UserService {
         return true;
     }
 
+    async getUserByID(id){
+        return await User.findById(id);
+    }
+
     async getUsers(){
         return await User.find();
     }
@@ -24,6 +28,10 @@ class UserService {
 
     async getUserByEmail(email){
         return await User.findOne({ email });
+    }
+
+    async updateUserEmail(oldEmail, newEmail){
+        return await User.findOneAndUpdate({ email: oldEmail }, { email: newEmail});
     }
 
     async createUser(userData){
