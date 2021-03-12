@@ -1,6 +1,8 @@
 # 💻 User's Crud (API)
 
-<img src="./users-crud-min.png" width="150px" align="center"></img>
+<p style="text-align: center;">
+  <img src="./users-crud-min.png" width="150px" align="center"></img>
+</p>
 
 ## <strong>Description</strong>
 
