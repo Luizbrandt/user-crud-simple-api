@@ -18,4 +18,11 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 
 <br/>
 
-## Procedure Mapping
+## Procedure Mapping Diagram
+
+<br/>
+
+## Future Improvements
+
+- Separate the routes from the controllers.
+- Implement a authentication system using JWT (<a href="https://jwt.io/">Json Web Token</a>)
