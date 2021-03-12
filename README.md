@@ -25,4 +25,5 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 ## Future Improvements
 
 - Separate the routes from the controllers.
-- Implement a authentication system using JWT (<a href="https://jwt.io/">Json Web Token</a>)
+- Implement a authentication system using JWT (<a href="https://jwt.io/">Json Web Token</a>).
+- Change the file organization (<a href="https://dev.to/devlcodes/file-structure-of-a-node-project-3opk">Node.Js File Organization</a>).
