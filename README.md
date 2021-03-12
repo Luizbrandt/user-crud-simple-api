@@ -35,3 +35,10 @@ Simple API that implements a User's CRUD using Node.Js and MongoDB. Created as a
 - MongoDB (<a href="https://www.mongodb.com/">General purpose, document-based, distributed database built for modern applications</a>)
 - Mongoose (<a href="https://mongoosejs.com/">Mongodb object modeling for Node.js</a>)
 - Express (<a href="https://expressjs.com/pt-br/">Web App Node.Js Framework</a>)
+
+## Installation
+
+```javascript
+git clone https://github.com/Luizbrandt/user-crud-simple-api
+npm i
+```
