@@ -1,0 +1,21 @@
+{
+    "name": "Simple User CRUD - Froentend Developer (Job Application) ",
+    "description": "This app gives an API for user's registry, list, update and exclusion. It's been done as a backend for Vue.Js frontend (to be done - repository will be placed here when complete).",
+    "keywords": [
+      "MongoDB",
+      "Mongoose",
+      "Node.Js",
+      "JavaScript"
+    ],
+
+    "repository": "https://github.com/Luizbrandt/user-crud-simple-api",
+        
+    "env": {
+        "MONGO_URL":{
+            "value": "mongodb+srv://admin:admin@nodejs-cluster.t3bon.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        },
+        "PORT":{
+            "value": 3500
+        }
+    }
+  }
