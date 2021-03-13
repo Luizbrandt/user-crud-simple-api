@@ -4,8 +4,7 @@
   "description": "Simple API that implements a User's CRUD using typeORM and MongoDB",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js",
-    "startProd": "node src/app.js"
+    "start": "node src/app.js"
   },
   "author": "",
   "license": "ISC",
