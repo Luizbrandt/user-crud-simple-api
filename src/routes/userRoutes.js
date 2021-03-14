@@ -145,6 +145,7 @@ router.put("/email", async (request, response) => {
 
 //Delete User
 router.delete("/", async (request, response) => {
+<<<<<<< HEAD
     const deleteUser = await userService.getUserByID(request.body.id);
     if(!deleteUser){
         response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.ID_NOT_FOUND});
@@ -152,6 +153,16 @@ router.delete("/", async (request, response) => {
         await deleteUser.delete();
         response.json({message: data.MESSAGES.DELETED_SUCCESS});
     }
+=======
+
+    const deleteUser = await userService.getUserByID(request.body.id);
+        if(!deleteUser){
+            response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.ID_NOT_FOUND});
+        }else{
+            await deleteUser.delete();
+            response.json({message: data.MESSAGES.DELETED_SUCCESS});
+        }
+>>>>>>> 49696e2c06558a1fdc311283d10c04d139191854
 })
 
 module.exports = router;
