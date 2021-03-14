@@ -145,12 +145,21 @@ router.put("/email", async (request, response) => {
 
 //Delete User
 router.delete("/", async (request, response) => {
-    const deleteUser = await userService.getUserByID(request.body.id);
-    if(!deleteUser){
-        response.status(data.STATUS_CODE.NOT_FOUND).json({message: data.MESSAGES.ID_NOT_FOUND});
+    
+    const id = request.body.id;
+
+    if(id){
+        const user = await userService.getUserByID(request.body.id);
+
+        if(user){
+            await user.delete();
+            response.json({message: "User deleted", "user": user });
+        } else{
+            response.status(404).json({message: "User not found"});
+        }
+
     }else{
-        await deleteUser.delete();
-        response.json({message: data.MESSAGES.DELETED_SUCCESS});
+        response.status(401).json({message: "ID should not me empty!"});
     }
 })
 
