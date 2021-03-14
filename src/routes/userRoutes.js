@@ -146,7 +146,7 @@ router.put("/email", async (request, response) => {
 //Delete User
 router.delete("/", async (request, response) => {
 
-    if(!request.body.id || (request.body.id.length != 24)){
+    if(!request.body.id){
         response.status(data.STATUS_CODE.EMPTY_FIELDS).json({message: data.MESSAGES.EMPTY_ID});
     } else {
         const deleteUser = await userService.getUserByID(request.body.id);
